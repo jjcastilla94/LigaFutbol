@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ligafutbol.InterfazController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="487.0" fitWidth="693.0" layoutX="-20.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@aa.jpg" />
+               </image>
+            </ImageView>
+            <MenuBar prefHeight="25.0" prefWidth="663.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Añadir Equipo">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirVistaAnadir" text="Añadir" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="Mostrar Equipo">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirVistaMostrar" text="Mostrar" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="Buscar Equipo">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirVistaBuscar" text="Buscar" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Modificar Equipo">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirVistaModificar" text="Modificar" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Borrar Equipo">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirVistaBorrar" text="Borrar" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Ordenar Equipo">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirVistaOrdenar" text="Ordenar" />
+                     </items></Menu>
+
+              </menus>
+            </MenuBar>
+
+            <Button layoutX="246.0" layoutY="336.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="116.0" text="Salir del Programa" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

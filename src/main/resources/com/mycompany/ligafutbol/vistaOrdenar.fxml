@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ligafutbol.InterfazController">
+   <children>
+      <Pane prefHeight="402.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="689.0" layoutX="-29.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@descarrrga.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="237.0" layoutY="271.0" mnemonicParsing="false" onAction="#ordenarFichero" text="Ordenar todos los Equipos" />
+            <Button layoutX="276.0" layoutY="313.0" mnemonicParsing="false" onAction="#volverAtras" text="Volver atras" />
+            <Text layoutX="167.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordenar Equipos">
+
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="ordenado" layoutX="236.0" layoutY="215.0" prefHeight="17.0" prefWidth="157.0" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>

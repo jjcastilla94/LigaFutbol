@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ligafutbol.InterfazController">
+   <children>
+      <Pane prefHeight="406.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="479.0" fitWidth="774.0" layoutX="-84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@450_1000.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nombreEquipoDelete" layoutX="405.0" layoutY="150.0" prefHeight="25.0" prefWidth="172.0" promptText="Nombre del equipo" />
+            <Button layoutX="459.0" layoutY="200.0" mnemonicParsing="false" onAction="#borrarEquipo" text="Borrar equipo" />
+            <Button layoutX="464.0" layoutY="240.0" mnemonicParsing="false" onAction="#volverAtras" text="Volver atras" />
+            <Text fill="RED" layoutX="417.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrar Equipo" textAlignment="CENTER" wrappingWidth="159.5078125">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <Label fx:id="borrador" layoutX="405.0" layoutY="344.0" prefHeight="17.0" prefWidth="181.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

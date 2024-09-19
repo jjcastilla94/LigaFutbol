@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ligafutbol.InterfazController">
+   <children>
+      <Pane prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="504.0" fitWidth="786.0" layoutX="-83.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@descargaaa.jpeg" />
+               </image>
+            </ImageView>
+            <Text layoutX="377.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mostrar Equipos" wrappingWidth="249.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="mostrarEquipos" layoutX="223.0" layoutY="228.0" prefHeight="122.0" prefWidth="356.0" promptText="Aquí se muestran todos los Equipos" />
+            <Button layoutX="347.0" layoutY="188.0" mnemonicParsing="false" onAction="#mostrarEquipos" text="Mostrar todos los Equipos" />
+
+            <Button layoutX="385.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAtras" text="Volver atras" />
+         </children></Pane>
+   </children>
+</VBox>

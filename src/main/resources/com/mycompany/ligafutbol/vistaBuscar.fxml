@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ligafutbol.InterfazController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="509.0" fitWidth="788.0" layoutX="-83.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ae7be566-170c-48b2-985e-448edcc3765e_alta-libre-aspect-ratio_default_0.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="300.0" layoutY="242.0" mnemonicParsing="false" onAction="#volverAtras" text="Volver atras" />
+            <Button layoutX="185.0" layoutY="242.0" mnemonicParsing="false" onAction="#buscarEquipo" text="Buscar equipo" />
+            <Text layoutX="195.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar Equipo" textAlignment="CENTER" wrappingWidth="189.15625">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="buscarEq" layoutX="141.0" layoutY="278.0" prefHeight="110.0" prefWidth="297.0" />
+            <TextField fx:id="nombreEquipobusc" layoutX="166.0" layoutY="209.0" prefHeight="25.0" prefWidth="229.0" promptText="Nombre del equipo que quieres buscar" />
+
+         </children>
+      </Pane>
+   </children>
+</VBox>
